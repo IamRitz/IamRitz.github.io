@@ -40,13 +40,25 @@
         h2 {
             margin-top: 0;
         }
-
         .qualifications {
             list-style: none;
             padding: 0;
         }
         .qualifications li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+        .qualifications li .bullet {
+            margin-right: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+        .qualifications li .qualification {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -67,10 +79,26 @@
         <h2 id="education">Education</h2>
         <!-- Add your educational information here -->
         <ul class="qualifications">
-            <li>Master in Cybersecurity</li>
-            <li>Bachelor's Degree in Computer Science</li>
-            <li>Senior Secondary Certificate</li>
-            <li>Higher Secondary Certificate</li>
+          <li>
+                <div class="bullet"></div>
+                <div class="qualification">Bachelor's Degree in Computer Science</div>
+            </li>
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Master's Degree in Business Administration</div>
+            </li>
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Diploma in Web Development</div>
+            </li>
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Certification in Graphic Design</div>
+            </li>
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">High School Diploma</div>
+            </li>
         </ul>
 
         <h2 id="projects">Projects</h2>
