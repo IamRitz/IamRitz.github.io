@@ -13,12 +13,20 @@
             text-align: center;
             padding: 20px;
         }
+
         .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: contain;
+            align: center ;
         }
+
+        .profile-photo{
+            margin: auto ;
+            max-width: 90% ;
+            max-height: 400px ;
+            display: block ;
+            border-radius: 50%;
+            border-fit: cover;
+        }
+
         .bio {
             font-size: 18px;
             margin-top: 20px;
@@ -79,33 +87,74 @@
         <h2 id="education">Education</h2>
         <!-- Add your educational information here -->
         <ul class="qualifications">
-          <li>
+            <li>
                 <div class="bullet"></div>
-                <div class="qualification">Bachelor's Degree in Computer Science</div>
+                <div class="qualification">M.Tech in Cyber Security, IIT Delhi</div>
             </li>
             <li>
                 <div class="bullet"></div>
-                <div class="qualification">Master's Degree in Business Administration</div>
+                <div class="qualification">B.Tech in Computer Science, UIET CSJMU Kanpur</div>
             </li>
             <li>
                 <div class="bullet"></div>
-                <div class="qualification">Diploma in Web Development</div>
+                <div class="qualification">SSC(12th), Kendriya Vidyalaya FCI Gorakhpur Uttar Pradesh</div>
             </li>
             <li>
                 <div class="bullet"></div>
-                <div class="qualification">Certification in Graphic Design</div>
-            </li>
-            <li>
-                <div class="bullet"></div>
-                <div class="qualification">High School Diploma</div>
+                <div class="qualification">HSC(10th), Kendriya Vidyalaya FCI Gorakhpur Uttar Pradesh</div>
             </li>
         </ul>
 
         <h2 id="projects">Projects</h2>
         <!-- Add information about your projects here -->
-
+        <ul>
+            <li>
+                <div class="bullet">Modified P2P File Distribution Framework (Prof. Abhijnan Chakraborty)</div>
+                <div class="projects">Designed and implemented a modified P2P
+                    file-sharing network architecture using socket programming
+                    in Python. Initially, peers receive incomplete file chunks
+                    from the server and utilize TCP/UDP for file transfer and
+                    UDP/TCP for control messages to share the complete file among all peers.
+                </div>
+            </li>
+            <li>
+                <div class="bullet">Feature Enhancements in XV6 OS</div>
+                <div class="projects"></div>
+            </li>
+            <li>
+                <div class="bullet">Docker-like containers in XV6 OS</div>
+                <div class="projects"></div>
+            </li>
+            <li>
+                <div class="bullet">Real-time Live Face Detection using DCT Energy Analysis</div>
+                <div class="projects"></div>
+            </li>
+            <li>
+                <div class="bullet">Building Gem5 with RISC-V and Adding Custom Instructions</div>
+                <div class="projects"></div>
+            </li>
+            <li>
+                <div class="bullet">Simulation of Cycle-Accurate Systolic Arrays</div>
+                <div class="projects"></div>
+            </li>
+        </ul>
         <h2 id="experience">Work Experience</h2>
         <!-- Add information about your work experience here -->
+        <ul>
+            <li>
+                <div class="bullet">Introduction to Computer Science (COL100) under Prof. Subodh V. Sharma</div>
+                <div class="projects">
+                    Responsible for conducting weekly labs,
+                    Resolving Doubts, Invigilation duty, Copy Checking.
+                </div>
+            </li>
+            <li>
+                <div class="bullet">Data Structures and Algorithms (COL106) under Prof. Rahul Garg and Subodh V. Sharma</div>
+                <div class="projects">Responsible for conducting weekly labs, Resolving Doubts/CP-problems, Invigilation duty, Copy Checking.
+                    Creating Lab Test Solution, Testcases and Evaluation.
+                </div>
+            </li>
+        </ul>
     </div>
 
     <script>
@@ -114,7 +163,7 @@
         const name = document.getElementById('name');
         const bio = document.getElementById('bio');
 
-        profilePhoto.src = 'my_photo.jpg'; // Replace 'your_photo.jpg' with your actual photo URL
+        profilePhoto.src = 'my_photo_resize.jpg'; // Replace 'your_photo.jpg' with your actual photo URL
         name.textContent = 'Ritesh Srivastava'; // Replace 'Your Name' with your actual name
         bio.textContent = 'I am an MTech Cybersecurity Student at IIT Delhi. My area of research is "Robustness Analysis of Neural Networks"'; // Replace 'Add your bio here' with your actual bio
 
